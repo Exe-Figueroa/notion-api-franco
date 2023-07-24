@@ -37,7 +37,7 @@ async function getTable() {
 }
 
 // Ruta para obtener los datos de la tabla desde Notion
-app.get("/tabla-notion", async (req, res) => {
+app.get("/api/tabla-notion", async (req, res) => {
   try {
     const data = await getTable();
     res.json(data);
