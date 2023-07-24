@@ -36,6 +36,10 @@ async function getTable() {
   }
 }
 
+app.get("/api", (req, res) => {
+  res.send('Hola mundo')
+})
+
 // Ruta para obtener los datos de la tabla desde Notion
 app.get("/api/tabla-notion", async (req, res) => {
   try {
